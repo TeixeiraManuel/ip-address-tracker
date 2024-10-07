@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: url(../images/pattern-bg-desktop.png);
+    width: 100vw;
+    height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#map {
+    width: 100vw;
+    height: 74vh; 
+}
