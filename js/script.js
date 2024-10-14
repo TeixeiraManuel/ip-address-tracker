@@ -10,7 +10,7 @@ initialRequest()
 async function initialRequest(){
 
   try {
-    const response = await fetch ("http://ip-api.com/json/");
+    const response = await fetch ("https://ip-api.com/json/");
     const data = await response.json();
     const {lat, lon} = data
 
