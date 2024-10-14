@@ -10,7 +10,7 @@ initialRequest()
 async function initialRequest(){
 
   try {
-    const response = await fetch ("https://ip-api.com/json/");
+    const response = await fetch ("http://ip-api.com/json/");
     const data = await response.json();
     const {lat, lon} = data
 
@@ -42,7 +42,7 @@ btnSearch.addEventListener('click',()=>{
 async function getLocation(value) {
 
   try {
-    const response = await fetch(`https://ip-api.com/json/${value}`);
+    const response = await fetch(`http://ip-api.com/json/${value}`);
     const data = await response.json();
     const {lat, lon} = data;
     
