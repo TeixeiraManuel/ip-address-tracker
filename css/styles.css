@@ -2,15 +2,103 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: rubik;
+
+}
+:root{  
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
 }
 header{
     background: url(../images/pattern-bg-desktop.png);
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
+header h1{
+    color:#fff;
+    padding-top: 4rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
 #map {
     width: 100vw;
-    height: 74vh; 
+    height: 70vh; 
+}
+
+.search-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.search-content input{
+    border: none;
+    outline: none;
+    width: 17rem;
+    height: 3.2rem;
+    padding-left: 1rem;
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+
+}
+.search-content input::placeholder{
+    color: var(--Dark-Gray);
+}
+.search-content button{
+    background-color: black;
+    border: none;
+    cursor: pointer;   
+    padding: 1.2rem;
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+.addres-information{
+    position: relative;
+    z-index: 999999999;
+    width: 90%;
+    padding: 2rem 9rem 2rem 2rem;
+    border-radius: .6rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 4rem;
+}
+.title{
+    color: var(--Dark-Gray);
+}
+.address-details{
+    width: 10rem;
+    font-size: 1.6rem;
+    padding-top: .4rem;
+    font-weight: 700;
+}
+@media (max-width:1000px){
+    .addres-information{
+        width: 80%;
+        align-items: center;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px){
+    .addres-information{
+        width: 80%;
+        align-items: center;
+        margin-top: 2rem;
+        padding-right: 4rem;
+        flex-direction: column;
+    }
+    .address-details{
+        width: 10rem;
+        font-size: 1.2rem;
+        padding-top: .4rem;
+        font-weight: 700;
+    }
 }
