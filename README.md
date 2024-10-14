@@ -24,4 +24,3 @@ Your users should be able to:
 - Search for any IP addresses or domains and see the key information and location
 
 ---
-deploy link :[link deploy](https://teixeiramanuel.github.io/ip-address-tracker/)
